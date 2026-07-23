@@ -1,0 +1,88 @@
+aid: bank-of-hawaii
+name: Bank of Hawaii
+review:
+  question: Does Bank of Hawaii expose a first-party public developer portal or documented public API?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Bank of Hawaii publishes no first-party public developer portal and no
+    documented public API. Subdomain probes to developer.boh.com and
+    developers.boh.com do not resolve (connection failure / no DNS answer),
+    and the on-site paths www.boh.com/developer and www.boh.com/developers
+    both return HTTP 404. The public marketing and secure online-banking
+    surfaces are live, but no machine-readable API reference, OpenAPI, or
+    Swagger document is published anywhere on the domain.
+
+    Bank of Hawaii is a state-chartered commercial bank (chartered by the
+    State of Hawaii, 1897), a Federal Reserve System member and FDIC-insured,
+    operating as the principal subsidiary of Bank of Hawaii Corporation
+    (NYSE: BOH). Its SWIFT/BIC is BOHIUS77.
+
+    US open finance is voluntary and fragmented; there is no single mandated
+    open-banking contract. Consistent with most regional US banks, the honest
+    posture here is aggregator-only: consumer-permissioned account data can be
+    reached through third-party aggregators such as Plaid, but not through any
+    bank-operated API. No Financial Data Exchange (FDX) membership was found,
+    and no CFPB Section 1033 (Personal Financial Data Rights) data-access
+    posture is published. Because there is no public API, no authentication
+    model (OAuth2/OIDC, API key, or mTLS) is documented, and there is no spec
+    to harvest — the openapi/ directory is intentionally empty.
+  posture:
+    firstPartyDeveloperPortal: false
+    developerPortalURL: ''
+    downloadableSpec: false
+    specProvenance: none
+    fdxParticipant: false
+    section1033Posture: none-published
+    aggregatorAccess: true
+    aggregators:
+      - Plaid
+    authModel: none-documented
+  transports:
+    - protocol: REST
+      documented: false
+      note: No public REST API is documented for Bank of Hawaii.
+    - protocol: FDX
+      documented: false
+      note: No FDX-conformant data-access API or FDX membership was found.
+  probes:
+    - url: https://developer.boh.com
+      status: 000
+      note: Does not resolve / connection failure.
+    - url: https://developers.boh.com
+      status: 000
+      note: Does not resolve / connection failure.
+    - url: https://api.boh.com
+      status: 000
+      note: Does not resolve / connection failure.
+    - url: https://www.boh.com/developer
+      status: 404
+      note: Not found on the primary marketing site.
+    - url: https://www.boh.com/developers
+      status: 404
+      note: Not found on the primary marketing site.
+    - url: https://www.boh.com
+      status: 200
+      note: Primary marketing site is live.
+    - url: https://www.boh.com/personal/online-mobile
+      status: 200
+      note: Consumer online and mobile banking product page (no API surface).
+sources:
+  - url: https://www.boh.com
+    type: Website
+    note: Primary marketing site; no developer or API links present.
+  - url: https://www.openbankingtracker.com/provider/bank-of-hawaii-us
+    type: Reference
+    note: Third-party open-banking tracker; lists no API products and states integration is via aggregators (Plaid/Tink/TrueLayer). SWIFT BOHIUS77.
+  - url: https://en.wikipedia.org/wiki/Bank_of_Hawaii
+    type: Reference
+    note: 'Institution identity, charter, and Bank of Hawaii Corporation (NYSE: BOH) ownership.'
+actions:
+  openapiHarvested: false
+  reason: |
+    No public API surface and no downloadable OpenAPI/Swagger exist to harvest.
+    This is an honest identity-only (stub) record capturing the institution and
+    its aggregator-only open-finance posture. No hosts, specs, or endpoints were
+    invented.

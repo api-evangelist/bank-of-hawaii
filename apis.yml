@@ -1,0 +1,48 @@
+aid: bank-of-hawaii
+url: https://raw.githubusercontent.com/api-evangelist/bank-of-hawaii/refs/heads/main/apis.yml
+name: Bank of Hawaii
+kind: company
+description: >-
+  Bank of Hawaii is a state-chartered commercial bank organized under the laws
+  of the State of Hawaii in 1897, a member of the Federal Reserve System and
+  FDIC-insured. It is the principal banking subsidiary of Bank of Hawaii
+  Corporation (NYSE: BOH), a Honolulu-headquartered regional financial services
+  company serving Hawaii, Guam, and other Pacific islands with consumer,
+  commercial, and wealth-management banking. As a regional US institution, Bank
+  of Hawaii publishes no first-party public developer portal and exposes no
+  documented public API surface; probes of developer.boh.com and
+  developers.boh.com do not resolve. US open finance is voluntary and
+  fragmented, and consumer-permissioned data access to Bank of Hawaii accounts
+  is available in practice only through third-party aggregators (for example
+  Plaid), not through a direct bank-operated API. No Financial Data Exchange
+  (FDX) membership and no published CFPB Section 1033 data-access posture were
+  found at the time of this record.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial Services
+- Banking
+- United States
+- Regional Bank
+- Open Finance
+- Data Aggregation
+- Hawaii
+created: '2026-07-23'
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis: []
+common:
+- type: Website
+  url: https://www.boh.com
+- type: LinkedIn
+  url: https://www.linkedin.com/company/bank-of-hawaii
+- type: Documentation
+  url: https://www.boh.com/personal/online-mobile
+- type: Support
+  url: https://www.boh.com/welcome
+- type: PrivacyPolicy
+  url: https://www.boh.com/privacy
+- type: DomainSecurity
+  url: https://www.boh.com/security
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
