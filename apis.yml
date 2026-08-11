@@ -31,6 +31,10 @@ modified: '2026-07-23'
 specificationVersion: '0.19'
 apis: []
 common:
+- type: Blog
+  url: https://www.boh.com/blog
+- type: Login
+  url: https://www.boh.com/wealth/investments/login
 - type: Website
   url: https://www.boh.com
 - type: LinkedIn
