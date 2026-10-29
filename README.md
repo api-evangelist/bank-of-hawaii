@@ -1,4 +1,4 @@
-# Bank of Hawaii (bank-of-hawaii)
+# Bank of Hawaii
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,47 +64,84 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Bank of Hawaii is a state-chartered commercial bank organized under the laws of the State of Hawaii in 1897, a Federal Reserve System member and FDIC-insured institution. It is the principal banking subsidiary of Bank of Hawaii Corporation (NYSE: BOH), a Honolulu-headquartered regional financial services company serving Hawaii, Guam, and other Pacific islands with consumer, commercial, and wealth-management banking.
+Bank of Hawaii is a state-chartered commercial bank organized under the laws of the State of Hawaii in 1897, a member of the Federal Reserve System and FDIC-insured. It is the principal banking subsidiary of Bank of Hawaii Corporation (NYSE: BOH), a Honolulu-headquartered regional financial services company serving Hawaii, Guam, and other Pacific islands with consumer, commercial, and wealth-management banking. As a regional US institution, Bank of Hawaii publishes no first-party public developer portal and exposes no documented public API surface; probes of developer.boh.com and developers.boh.com do not resolve. US open finance is voluntary and fragmented, and consumer-permissioned data access to Bank of Hawaii accounts is available in practice only through third-party aggregators (for example Plaid), not through a direct bank-operated API. No Financial Data Exchange (FDX) membership and no published CFPB Section 1033 data-access posture were found at the time of this record.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/bank-of-hawaii/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/bank-of-hawaii/refs/heads/main/apis.yml)
+**Areas:** Financial Services · Banking · United States · Regional Bank · Open Finance · Hawaii
 
-## Open Finance / API Posture
+## Bank of Hawaii on APIs.io
 
-Bank of Hawaii publishes no first-party public developer portal and exposes no documented public API. Probes of `developer.boh.com` and `developers.boh.com` do not resolve, and `www.boh.com/developer(s)` returns HTTP 404. This is the honest and common reality for regional US banks: US open finance is voluntary and fragmented, with no single mandated open-banking contract.
+Everything profiled for Bank of Hawaii is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/bank-of-hawaii/](https://apis.io/providers/bank-of-hawaii/)** — or go straight to one of the APIs or properties below.
 
-Consumer-permissioned access to Bank of Hawaii account data is available in practice only through third-party data aggregators (for example Plaid), not through a bank-operated API. No Financial Data Exchange (FDX) membership and no published CFPB Section 1033 (Personal Financial Data Rights) data-access posture were found at the time of this record. No downloadable OpenAPI or Swagger specification exists to harvest.
+### Published properties
 
-This record is therefore identity-only (a stub): it captures who the institution is and its genuine open-finance posture, without inventing any API surface.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Tags
+#### Security (1)
 
-- Financial Services
-- Banking
-- United States
-- Regional Bank
-- Open Finance
-- Data Aggregation
-- Hawaii
+Authentication, trust centre, and vulnerability disclosure.
 
-## Timestamps
+- [Bank Of Hawaii Domain Security](https://apis.io/security/bank-of-hawaii/bank-of-hawaii-domain-security/)
 
-- **Created:** 2026-07-23
-- **Modified:** 2026-07-23
+## Where to find this API
 
-## APIs
-
-No public API products are documented for Bank of Hawaii. Account data access is aggregator-mediated only.
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.boh.com)
-- [LinkedIn](https://www.linkedin.com/company/bank-of-hawaii)
 - [Documentation](https://www.boh.com/personal/online-mobile)
 - [Support](https://www.boh.com/welcome)
-- [Privacy Policy](https://www.boh.com/privacy)
-- [Domain Security](https://www.boh.com/security)
+- [Blog](https://www.boh.com/blog)
+- [Terms of service](https://www.boh.com/terms)
+- [Privacy policy](https://www.boh.com/privacy)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 12.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 27.6 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.0** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/bank-of-hawaii/](https://apis.io/providers/bank-of-hawaii/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Bank of Hawaii: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/bank-of-hawaii/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
